@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Synergy Maritime Solutions - Vessel Information</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body 
+{
+	font-family:Arial, Helvetica, sans-serif; 
+	background-color:#ccf5ff;
+}
+
+input[type=text], input[type=text], input[type=text], input[type=select], input[type=text], input[type=text] 
+{
+  	width:450px;
+ 	padding:10px 20px;
+  	display:inline-block;
+  	border:1px solid #ccc;
+  	box-sizing:border-box;
+  	text-align:center;
+}
+
+button 
+{
+  	background-color:#00008b;
+  	color:white;
+  	padding:10px;
+  	border:none;
+  	cursor:pointer;
+  	width:10%;
+  	font-size:110%;
+}
+
+.cancelbtn 
+{
+  	width:10%;
+  	padding:10px;
+  	background-color:#ffffff;
+  	color:#00008b;
+	float:center;
+}
+
+.imgcontainer 
+{
+  	text-align:center;
+}
+
+img.avatar 
+{
+  	width:15%;
+  	border-radius:12%;
+}
+
+.container 
+{
+  	padding:5px;
+}
+
+span.psw 
+{
+  	float:right;
+	padding:5px;
+}
+
+th, td 
+{
+	padding-left:20px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width:300px) 
+{
+  	span.psw 
+	{
+     		display:block;
+     		float:none;
+  	}
+  	.cancelbtn 
+	{
+     		width:100%;
+  	}
+}
+</style>
+</head>
+
+<header style="background-color:#00008b; color:#ffffff; font-size:130%; text-align:center; padding:20px;"><b>Vessel Information</b></header>
+
+<body>
+<form>
+<div class="imgcontainer">
+<img src="C:\Users\Smrithi Sriram\OneDrive\Desktop\Synergy\ship_icon.png" alt="Avatar" class="avatar">
+</div>
+	
+<div class="container" style="text-align:center;">
+<table align="center">
+<thead>
+<tr>
+<th width="400px"></th>
+<th width="800px"></th>
+</tr>
+</thead>
+
+<tr>
+<td align="right"><label for="vessel_img" style="color:#00008b;"><b>Vessel Image</b></label></td>
+<td align="left"><input type="file" onchange="#" style="text-align:left; width:450px; padding:10px 10px; color:rgb(121, 120, 120);" name="myfile" accept="image/*" required><br><br></td>
+</tr>
+
+<tr>
+<td align="right"><label for="imo" style="color:#00008b;"><b>IMO Number</b></label></td>
+<td align="left"><input type="number" placeholder="  Enter IMO Number" style="text-align:left; padding:10px 10px; width:425px; border:0.1px solid; border-color:#ccc; color:rgb(121, 120, 120);" name="imo" required><br><br></td>
+</tr>
+
+<tr>
+<td align="right"><label for="vname" style="color:#00008b;"><b>Vessel Name</b></label></td>
+<td align="left"><input type="text" placeholder="Enter Vessel Name" style="text-align:left; width:450px; color:rgb(121, 120, 120);" name="vname"  required><br><br></td>	
+</tr>
+		
+<tr>
+<td align="right"><label for="type" style="color:#00008b;"><b>Vessel Type</b></label></td>
+<td align="left"><select id="type" name="type" style="padding:10px 10px; width:450px; border:0.1px solid; border-color:#ccc; color:rgb(121, 120, 120);" placeholder="Enter Vessel Type">
+<option value="" style="color:rgb(121, 120, 120);">Enter Vessel Type</option>
+<option value="bulkcarrier">Bulk Carrier</option>
+<option value="container">Container</option>
+<option value="tanker">Tanker</option>
+<option value="lpg">LPG</option>
+<option value="lng">LNG</option>
+</select><br><br></td>
+</tr>
+		
+<tr>
+<td align="right"><label for="classnum" style="color:#00008b;"><b>Class Number</b></label></td>
+<td align="left"><input type="number" placeholder=" Enter Class Number" style="text-align:left; padding:10px 10px; width:425px; border:0.1px solid; border-color:#ccc; color:rgb(121, 120, 120);" name="classnum"  required><br><br></td>
+</tr>
+		
+<tr>
+<td align="right"><label for="class" style="color:#00008b;"><b>Class</b></label></td>
+<td align="left"><select id="class" placeholder="Enter Class" style="padding:10px 10px; width:450px; border-color:#ccc; color:rgb(121, 120, 120);">
+<option value="">Enter Class</option>
+<option value="class1">Class1</option>
+<option value="class2">Class2</option>
+<option value="class3">Class3</option>
+<option value="class4">Class4</option>
+<option value="class5">Class5</option>
+</select><br><br></td>
+</tr>
+		
+<tr>
+<td align="right"><label for="flag" style="color:#00008b;"><b>Flag</b></label></td>
+<td align="left"><select id="flag" placeholder="Enter Flag" style="padding:10px 10px; width:450px; border-color:#ccc; color:rgb(121, 120, 120);">
+<option value="">Enter Flag</option>
+<option value="flag1">Flag1</option>
+<option value="flag2">Flag2</option>
+<option value="flag3">Flag3</option>
+<option value="flag4">Flag4</option>
+<option value="flag5">Flag5</option>
+</select><br><br></td>
+</tr>
+
+<tr>
+<td align="right"><label for="loa" style="color:#00008b;"><b>LOA</b></label></td>
+<td align="left"><input type="number" placeholder=" Enter LOA" style="text-align:left; padding:10px  10px; width:425px; border:0.1px solid; border-color:#ccc; color:rgb(121, 120, 120);" name="loa" required><br><br></td>
+</tr>
+
+<tr>
+<td align="right"><label for="breadth" style="color:#00008b;"><b>Breadth</b></label></td>
+<td align="left"><input type="number" step="any" placeholder=" Enter Breadth" style="text-align:left; padding:10px 10px; width:425px; border:0.1px solid; border-color:#ccc; color:rgb(121, 120, 120);" name="breadth" required><br><br></td>
+</tr>
+
+<tr>
+<td align="right"><label for="depth" style="color:#00008b;"><b>Depth</b></label></td>
+<td align="left"><input type="number" step="any" placeholder=" Enter Depth" style="text-align:left; padding:10px 10px; width:425px; border:0.1px solid; border-color:#ccc; color:rgb(121, 120, 120);" name="depth" required><br><br></td>
+</tr>
+
+</table>
+</div>
+	
+<div class="container" style="text-align:center;">
+<button type="submit">Submit</button><emsp>
+<button type="reset" class="cancelbtn" style="color:#00008b; font-size:110%">Cancel</button>
+</div>
+
+</form>
+</body>
+</html>

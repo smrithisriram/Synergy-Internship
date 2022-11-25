@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Synergy Maritime Solutions - User Information</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body 
+{
+	font-family:Arial, Helvetica, sans-serif; 
+	background-color:#ccf5ff;
+}
+
+input[type=text], input[type=password], input[type=text], input[type=email], input[type=text], input[type=text] 
+{
+  	width:450px;
+ 	padding:10px 20px;
+  	display:inline-block;
+  	border:1px solid #ccc;
+  	box-sizing:border-box;
+  	text-align:center;
+}
+
+button 
+{
+  	background-color:#00008b;
+  	color:white;
+  	padding:10px;
+  	border:none;
+  	cursor:pointer;
+  	width:10%;
+  	font-size:110%;
+}
+
+.cancelbtn 
+{
+  	width:10%;
+  	padding:10px;
+  	background-color:#ffffff;
+  	color:#00008b
+}
+
+.imgcontainer 
+{
+  	text-align:center;
+}
+
+img.avatar 
+{
+  	width:6%;
+  	border-radius:4%;
+}
+
+.container 
+{
+  	padding:5px;
+}
+
+span.psw 
+{
+  	float:right;
+	padding:5px;
+}
+
+th, td 
+{
+    padding:10px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width:300px) 
+{
+  	span.psw 
+	{
+     		display:block;
+     		float:none;
+  	}
+  	.cancelbtn 
+	{
+     		width:100%;
+  	}
+}
+</style>
+</head>
+
+<header style="background-color:#00008b; color:#ffffff; font-size:130%; text-align:center; padding:16px;"><b>User Information</b></header>
+
+<body>
+<form>
+<div class="imgcontainer">
+<br><img src="C:\Users\Smrithi Sriram\OneDrive\Desktop\Synergy\login_icon.png" alt="Avatar" class="avatar">
+</div>
+
+<div class="container" style="text-align:center;">
+<table align="center">
+<thead>
+<tr>
+<th width="400px"></th>
+<th width="800px"></th>
+</tr>
+</thead>
+
+<tr>
+<td align="right"><label for="uname" style="color:#00008b;"><b>Username</b></label></td>
+<td align="left"><input type="text" placeholder="Enter Username" style="text-align:left; color:rgb(121, 120, 120);" name="uname" required></td>
+</tr>
+            
+<tr>
+<td align="right"><label for="psw" style="color:#00008b;"><b>Password</b></label></td>
+<td align="left"><input type="password" placeholder="Enter Password" style="text-align:left; color:rgb(121, 120, 120);" name="psw" minlength="5" maxlength="25" required></td>
+</tr>
+
+<tr>
+<td align="right"><label for="name" style="color:#00008b;"><b>Name</b></label></td>
+<td align="left"><input type="text" placeholder="Enter Name" style="text-align:left; color:rgb(121, 120, 120);" name="name" required></td>
+</tr>
+
+<tr>
+<td align="right"><label for="mail" style="color:#00008b;"><b>Mail</b></label></td>
+<td align="left"><input type="email" placeholder="Enter Email" style="text-align:left; color:rgb(121, 120, 120);" name="mail" required></td>
+</tr>
+
+<tr>
+<td align="right"><label for="rank" style="color:#00008b;"><b>Rank</b></label></td>
+<td align="left"><input type="text" placeholder="Enter Rank" style="text-align:left; color:rgb(121, 120, 120);" name="rank" required></td>
+</tr>
+
+<tr>
+<td align="right"><label for="role" style="color:#00008b;"><b>Role</b></label></td>
+<td align="left"><input type="text" placeholder="Enter Role" style="text-align:left; color:rgb(121, 120, 120);" name="role" required></td>
+</tr>
+</table>
+</div>
+	
+<div class="container" style="text-align:center;">
+<button type="submit">Submit</button><br><br>
+	
+<label for="remember" style="color:#00008b;">
+<input type="checkbox" name="remember"> Remember me
+</label>
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+<span class="psw" style="color:#00008b; font-size:110%"><a href="C:\Users\Smrithi Sriram\OneDrive\Desktop\Synergy\forgot_pw.htm">Forgot Password</a></span>
+<button type="reset" class="cancelbtn" style="color:#00008b; font-size:110%">Cancel</button>
+</div>
+
+</form>
+</body>
+</html>
